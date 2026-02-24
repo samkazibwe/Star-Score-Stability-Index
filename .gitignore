@@ -1,0 +1,24 @@
+# --- R Specific ---
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.Rapp.history
+
+# --- Data Sovereignty & Security ---
+# Exclude raw community datasets containing specific Indigenous Observations
+data/raw/
+data/sensitive/
+*.csv
+!data/template_ledger.csv
+
+# Exclude private environment variables/API keys
+.env
+auth_credentials.json
+
+# --- Documentation & Reports ---
+*.log
+*.pdf
+*.docx
+# Keep final outputs but ignore temporary knitted files
+analysis/*.html
